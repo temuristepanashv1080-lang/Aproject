@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class Api {
   constructor(private http: HttpClient){}
  
-  baseUrl = " https://api.everrest.educata.dev/shop/"
+  private baseUrl = " https://api.everrest.educata.dev/shop/"
  
 // products/all?page_index=1&page_size=6
 
@@ -15,5 +15,8 @@ export class Api {
   return this.http.get(this.baseUrl + url)
 
   }
+
+
+// https://api.everrest.educata.dev/shop/products/id/6526cb4e57e3ec956179e70f
 
 }

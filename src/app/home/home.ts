@@ -1,9 +1,11 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
 import { Api } from '../api';
+import { Product } from '../models/product';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
@@ -28,7 +30,7 @@ ngOnInit(){
  })
 }
 
-produckts: any[]=[]
+produckts: Product[]=[]
 
 
 }

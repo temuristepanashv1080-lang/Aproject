@@ -7,8 +7,9 @@
   <img src="item.images[0]" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{item.description}}</h5>
-    <p class="card-text"></p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <p class="card-text">{{item.price}}</p>
+    <p class="card-text">{{item.title}}</p>
+    <a routerLink="/details" [queryParams]="{id :item._id}" class="btn btn-primary">See More</a>
   </div>
 </div>
 }
