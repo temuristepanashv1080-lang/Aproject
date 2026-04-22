@@ -15,6 +15,7 @@ export class Details {
      
     })
         
+    
   }
   
   ngOnIniti(){
